@@ -1,0 +1,119 @@
+
+	<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel = "stylesheet" href = "jquery.mobile-1.4.4.min.css">
+		<script src = "jquery-1.11.1.min.js"></script>
+	<script src = "jquery.mobile-1.4.4.min.js"></script> 
+	<script type = "text/javascript" src = "functions.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+</head>
+<body>
+
+	<!-- Page One -->
+	<div data-role = "page" id = "pageone" data-theme="b">
+	<div data-role = "header">
+		<h3>UBORA<br>Organizing Committee</h3>
+	<div data-role="navbar">
+					<ul>
+						<li>
+					<a href="#pageone" class="ui-btn-active ui-state-persist" data-icon="user" data-transition = "slideup">Registration</a>
+						</li>
+						<li>
+					<a href="#pagetwo" data-icon="grid" data-transition = "slidefade">Display List</a>
+						</li>
+						</ul>
+						</div>
+	</div>
+
+	<div role = "main" class = "ui-content">
+				<br>
+
+		<div data-role="navbar">
+			<ul>
+				<li>
+			<center><i>Welcome to the 2014 Ubora Registration Portal</i></center>
+		</li>
+		</ul>
+		</div>
+		<br><br>
+		<div data-role="collapsible">
+				<h1>Event Details</h1>
+				<p> UBORA 2014 (*R.A.R.E.*) </p>
+				<p> Date: 5th December 2014 </p>
+				<p> Celebrating 5 Years of Excellence </p>
+				<p> Venue: Alisa Hotel </p>
+				<p> Time: 18:00Hrs Prompt </p>
+				<p> Dress Code: Strictly Black-Tie </p>
+			</div>
+			<br>
+			<br>
+		<label for="fname">Full Name</label>
+		<input type="text" name="fname" id="fname" placeholder="participant name"><br>
+
+		<label for="cnumber">Contact</label>
+		<input type="text" name="cnumber" id="cnumber" placeholder="begin with country code eg. +233"><br>
+
+		<label for="email">Email</label>
+		<input type="text" name="email" id="email" placeholder="email address"><br>
+
+		<input class="ui-btn ui-input-btn ui-corner-all ui-shadow ui-btn-inline" 
+		type="submit" data-inline="true" id="saved" data-icon="check" onclick="refresh()" value="Save Details">
+
+		<input class="ui-btn ui-input-btn ui-corner-all ui-shadow ui-btn-inline" 
+		type="submit" data-inline="true" data-icon="refresh" onclick="refresh()" value="Refresh"><br>
+
+
+			<div data-role = "footer">
+				<h4>Kobby_Ohene's Ubora Registration App</h4>
+        	</div>
+		</div>
+	</div>
+
+
+	<!-- Page Two -->
+	<div data-role = "page" id = "pagetwo" data-theme="b">
+	<div data-role = "header">
+		<h3>UBORA<br>Organizing Committee</h3>
+	<div data-role="navbar">
+					<ul>
+						<li>
+					<a href="#pageone"  data-icon="user" data-transition = "slidedown">Registration</a>
+						</li>
+						<li>
+					<a href="#pagetwo" class="ui-btn-active ui-state-persist" data-icon="grid" 
+					data-transition = "pop">Display List</a>
+						</li>
+						</ul>
+						</div>
+	</div>
+
+	<div role = "main" class = "ui-content">
+				<br>
+
+		<div data-role="navbar">
+			<ul>
+				<li>
+			<center><i>List of Registered participants</i></center>
+		</li>
+		</ul>
+		</div>
+		<br><br>
+			<button id="getdet1">Click to load list of participants</button>
+			<div align = "middle">
+					NAME --------||----- CONTACT -----||-------- EMAIL
+		<ul id="detail">
+
+  		</ul>
+  	</div>
+
+
+			<div data-role = "footer">
+				<h4>Kobby_Ohene's Ubora Registration App</h4>
+        	</div>
+		</div>
+	</div>
+
+</body>
+</html>
